@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Soft light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White background for the form */
+    padding: 25px;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50; /* Dark gray for text */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form Labels */
+.form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4f5b66; /* Subtle dark gray for labels */
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 4px; /* Rounded edges for input fields */
+    border: 1px solid #ced4da; /* Light gray border */
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Focused input field */
+.form-control:focus {
+    border-color: #5cb85c; /* Light green border on focus */
+    box-shadow: 0 0 8px rgba(92, 184, 92, 0.5); /* Light green shadow on focus */
+}
+
+/* Submit button */
+.btn {
+    width: 100%; /* Make the button full width */
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #4e6d93; /* Dark blue for professionalism */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.btn:hover {
+    background-color: #3a5a7f; /* Darker blue on hover */
+}
+
+/* Placeholder color */
+::placeholder {
+    color: #b0b0b0; /* Light gray placeholder color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+}

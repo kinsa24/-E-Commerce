@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #4d5d7b; /* Darker blue, more formal */
+    padding: 0.5rem 1.5rem; /* Reduced padding for a more compact look */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.6rem; /* Moderate size for logo text */
+    font-weight: 600;
+    color: #ffffff; /* White color for logo */
+    letter-spacing: 0.5px;
+    margin-right: 20px; /* Adds a small space between the logo and navigation */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d1d9e6; /* Soft light gray color for nav links */
+    font-weight: 500;
+    text-transform: uppercase; /* Uppercase text for a formal feel */
+    margin-right: 15px; /* Space between navigation links */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffffff; /* White text color on hover */
+    text-decoration: none; /* No underline on hover */
+}
+
+/* Button Styles */
+.custom-btn {
+    font-size: 0.875rem; /* Smaller font size for the buttons */
+    padding: 8px 15px; /* Moderate padding to keep buttons compact */
+    border-radius: 25px; /* Rounded buttons for a modern look */
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-btn:hover {
+    background-color: #e3e5e8; /* Slightly darker blue for hover effect */
+    border-color: #4e6d93; /* Consistent hover effect with background */
+    color: #ffffff;
+}
+
+/* Outline button style */
+.btn-outline-primary {
+    color: #d1d9e6; /* Light gray color */
+    border-color: #d1d9e6;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4e6d93; /* Darker blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Navbar on smaller screens */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        text-align: center; /* Center-align nav items on small screens */
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Add space between nav items in small screens */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+}
+
+
+/* Hero Section */
+.jumbotron {
+    /* background: url('hero-image.jpg') no-repeat center center/cover; */
+    padding: 100px 0;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.jumbotron p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.jumbotron .btn {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    border-radius: 10px;
+}
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+footer p {
+    color: #4f3d3d;
+}
+footer a {
+    color: #4c5053;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+/* @media (max-width: 700px) { */
+    .jumbotron h1 {
+        font-size: 2.0rem;
+    }
+    .jumbotron p {
+        font-size: 0.9rem;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .navbar .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+/* } */
